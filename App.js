@@ -4,6 +4,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+//import Global from './styles/GStyles';
 
 //Icons
 import Icon from 'react-native-vector-icons/EvilIcons';
@@ -24,7 +25,15 @@ const Stack = createStackNavigator();
 const TopNavigator = ( ) => {
 
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        tabBarStyle: { backgroundColor: Global.darkMode},
+        //tabBarLabelStyle: { color: Global.textDark, fontWeight: 'bold' },
+        tabBarIndicatorStyle: { backgroundColor: Global.activeTab},
+        tabBarInactiveTintColor: Global.textDark,
+        tabBarActiveTintColor: Global.activeTab
+      }}
+    >
       <Tab.Screen name='Chats' component={Chats} />
       <Tab.Screen name='Status' component={Status}/>
       <Tab.Screen name="calls" component={Calls} />
@@ -40,15 +49,21 @@ const App = () => {
           <Stack.Screen
             options={ ({ navigation, route}) => ({
               title: 'WhatsApp',
+              headerTitleStyle: {
+                color: Global.textDark
+              },
+              headerStyle: {
+                backgroundColor: Global.darkMode,
+              },
               headerRight: () => {
                 return(
                   <View style={ Global.TopBar}>
                     <TouchableOpacity>
-                      <Icon name="search" size={40} color="gray" />
+                      <Icon name="search" size={35} color={Global.textDark} />
                     </TouchableOpacity>
 
                     <TouchableOpacity>
-                      <DIcon name="dots-three-vertical" size={30} color="gray" />
+                      <DIcon name="dots-three-vertical" size={25} color={Global.textDark} />
                     </TouchableOpacity>
                   </View>
                 )
