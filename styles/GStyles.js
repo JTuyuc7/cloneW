@@ -18,7 +18,8 @@ const Global = StyleSheet.create({
     textMessage: '#8596a0',
     activeTab: '#05a782',
     saw: "#5dbae5",
-    delivered: '#878cbf'
+    delivered: '#878cbf',
+    status: "#00a884"
 })
 
 export default Global;
