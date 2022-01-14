@@ -1,0 +1,95 @@
+const calls = [
+    {
+        id: 1,
+        phone: '+502 26212840',
+        name: '',
+        date: new Date(),
+        type: 'made',
+    },
+    {
+        id: 2,
+        phone: '+502 77889944',
+        name: '',
+        date: new Date(),
+        type: 'missed',
+    },
+    {
+        id: 3,
+        phone: '+502 1234589',
+        name: '',
+        date: new Date(),
+        type: 'recived',
+    },
+    {
+        id: 4,
+        phone: '+502 1234589',
+        name: '',
+        date: new Date(),
+        type: 'made',
+    },
+    {
+        id: 5,
+        phone: '+502 1234589',
+        name: '',
+        date: new Date(),
+        type: 'missed',
+    },
+    {
+        id: 6,
+        phone: '+502 1234589',
+        name: '',
+        date: new Date(),
+        type: 'recived',
+    },
+    {
+        id: 7,
+        phone: '+502 1234589',
+        name: '',
+        date: new Date(),
+        type: 'missed',
+    },
+    {
+        id: 8,
+        phone: '',
+        name: 'Tony',
+        date: new Date(),
+        type: 'made',
+    },
+    {
+        id: 9,
+        phone: '+502 1234589',
+        name: '',
+        date: new Date(),
+        type: 'recived',
+    },
+    {
+        id: 10,
+        phone: '+502 1234589',
+        name: '',
+        date: new Date(),
+        type: 'missed',
+    },
+    {
+        id: 11,
+        phone: '',
+        name: 'James',
+        date: new Date(),
+        type: 'recived',
+    },
+    {
+        id: 12,
+        phone: '+502 1234589',
+        name: 'Cristian',
+        date: new Date(),
+        type: 'missed',
+    },
+    {
+        id: 13,
+        phone: '',
+        name: 'Frida',
+        date: new Date(),
+        type: 'made',
+    }
+]
+
+export default calls;
