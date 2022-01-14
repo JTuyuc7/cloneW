@@ -19,7 +19,9 @@ const Global = StyleSheet.create({
     activeTab: '#05a782',
     saw: "#5dbae5",
     delivered: '#878cbf',
-    status: "#00a884"
+    status: "#00a884",
+    arrowMissed: '#f05c6c',
+    arrowRecived: "#26d367"
 })
 
 export default Global;
